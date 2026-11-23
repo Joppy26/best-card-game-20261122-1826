@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23e2483d'/%3E%3C/svg%3E">
+<title>Ember &amp; Tide — a duel of sparks and waves</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #101c2b; }
+  #game { position: fixed; inset: 0; margin: auto; display: block; touch-action: none; cursor: pointer; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Ember and Tide: a card duel against the Tide Warden. Play cards with keys 1 to 5 or by clicking, End Turn with Enter."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
